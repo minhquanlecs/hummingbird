@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Hummingbird</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -210,6 +210,35 @@
   </section>
   <!-- End paper abstract -->
 
+  <section class="section is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Method Overview</h2>
+            <center>
+              <img src="static/images/framework-v5.pdf" alt="Method Overview" class="center-image" />
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                Given text guidance \( \mathbf{g} \) and reference image \( \mathbf{x} \) (multimodal context \(
+                \mathcal{M} \)),
+                \method crafts an instruction prompt $p$ to feed to MLLM and obtain Context Description \( \mathcal{C}
+                \).
+                It them embeds \( \mathbf{x}$ \) and \( \mathcal{C} \) via CLIP to feed to UNet Denoiser of SDXL to
+                generate
+                image \( \mathbf{\hat{x}} \). To improve the fidelity of \( \mathbf{\hat{x}} \) w.r.t. \( \mathcal{M} \)
+                while
+                preserving diversity, Hummingbird introduced Multimodal Context Evaluator to simultaneously maximize
+                novel
+                rewards - Global Semantic and Fine-Grained Consistency Rewards - to align \( \mathbf{\hat{x}} \) with
+                scene attributes provided in \( \mathcal{M} \). </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Image carousel -->
   <section class="hero is-small">
