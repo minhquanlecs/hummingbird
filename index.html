@@ -42,6 +42,9 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
 
 <body>
@@ -223,22 +226,25 @@
               <p>
                 Given text guidance \( \mathbf{g} \) and reference image \( \mathbf{x} \) (multimodal context \(
                 \mathcal{M} \)),
-                \method crafts an instruction prompt $p$ to feed to MLLM and obtain Context Description \( \mathcal{C}
-                \).
-                It them embeds \( \mathbf{x}$ \) and \( \mathcal{C} \) via CLIP to feed to UNet Denoiser of SDXL to
+                <i>\method</i> crafts an instruction prompt \( p \) to feed to MLLM and obtain Context Description \(
+                \mathcal{C} \).
+                It then embeds \( \mathbf{x} \) and \( \mathcal{C} \) via CLIP to feed to the UNet Denoiser of SDXL to
                 generate
-                image \( \mathbf{\hat{x}} \). To improve the fidelity of \( \mathbf{\hat{x}} \) w.r.t. \( \mathcal{M} \)
-                while
-                preserving diversity, Hummingbird introduced Multimodal Context Evaluator to simultaneously maximize
-                novel
-                rewards - Global Semantic and Fine-Grained Consistency Rewards - to align \( \mathbf{\hat{x}} \) with
-                scene attributes provided in \( \mathcal{M} \). </p>
+                image \( \mathbf{\hat{x}} \). To improve the fidelity of \( \mathbf{\hat{x}} \) with respect to \(
+                \mathcal{M} \)
+                while preserving diversity, Hummingbird introduced a Multimodal Context Evaluator to simultaneously
+                maximize
+                novel rewards -- Global Semantic and Fine-Grained Consistency Rewards -- to align \( \mathbf{\hat{x}} \)
+                with
+                scene attributes provided in \( \mathcal{M} \).
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Image carousel -->
   <section class="hero is-small">
