@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Hummingbird: High Fidelity Image Generation <br> via Multimodal
+            <h1 class="title is-1 publication-title">Hummingbird: High Fidelity Image Generation via Multimodal
               Context Alignment</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -143,18 +143,41 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
-        </video>
+        <center>
+          <img src="static/images/teaser_comparison_v1.pdf" class="center-image" />
+        </center>
         <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+          Hummingbird aligns generated image with multimodal context input (reference image + text guidance) ensuring
+          the synthetic image is diverse w.r.t. reference image while exhibiting high fidelity (i.e. preserves the scene
+          attribute from reference image in relation to text guidance). (a-f) By doing so, for VQA and HOI Reasoning,
+          Hummingbird enables the answer to the question in the text guidance to remain consistent between the reference
+          and generated images. (g) Hummingbird is also able to preserve both diversity and fidelity without the
+          trade-off exhibited by existing methods.
         </h2>
       </div>
     </div>
   </section>
   <!-- End teaser video -->
+
+  <!-- <section class="section is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Inference Overview</h2>
+            <center>
+            <img src="static/images/architecture_applications_extended.png" alt="Inference Overview" class="center-image"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                Hummingbird aligns generated image with multimodal context input (reference image + text guidance) ensuring the synthetic image is diverse w.r.t.~reference image while exhibiting high fidelity (i.e.~preserves the scene attribute from reference image in relation to text guidance). (a-f) By doing so, for VQA and HOI Reasoning, Hummingbird enables the answer to the question in the text guidance to remain consistent between the reference and generated images. (g) Hummingbird is also able to preserve both diversity and fidelity without the trade-off exhibited by existing methods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <!-- Paper abstract -->
   <section class="section hero is-light">
@@ -168,7 +191,7 @@
               tasks, existing methods struggle with scene-aware tasks such as Visual Question Answering (VQA) and
               Human-Object Interaction (HOI) Reasoning, where it is critical to preserve scene attributes in generated
               images consistent with a multimodal context, i.e.~a reference image with accompanying text guidance query.
-              To address this, we introduce \textbf{Hummingbird}, the first diffusion-based image generator which, given
+              To address this, we introduce <b>Hummingbird</b>, the first diffusion-based image generator which, given
               a multimodal context, generates highly diverse images w.r.t. the reference image while ensuring high
               fidelity by accurately preserving scene attributes, such as object interactions and spatial relationships
               from the text guidance. Hummingbird employs a novel Multimodal Context Evaluator that simultaneously
