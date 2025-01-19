@@ -52,8 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Hummingbird: High Fidelity Image Generation via Multimodal Context
-              Alignment</h1>
+            <h1 class="title is-1 publication-title">Hummingbird: High Fidelity Image Generation <br> via Multimodal
+              Context Alignment</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -81,7 +81,7 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>Stony Brook University,</span>
-              <span class="author-block"><sup>2</sup>Microsoft,</span>
+              <span class="author-block"><sup>2</sup>Microsoft</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
 
@@ -164,11 +164,21 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              While diffusion models are powerful in generating high-quality, diverse synthetic data for object-centric
+              tasks, existing methods struggle with scene-aware tasks such as Visual Question Answering (VQA) and
+              Human-Object Interaction (HOI) Reasoning, where it is critical to preserve scene attributes in generated
+              images consistent with a multimodal context, i.e.~a reference image with accompanying text guidance query.
+              To address this, we introduce \textbf{Hummingbird}, the first diffusion-based image generator which, given
+              a multimodal context, generates highly diverse images w.r.t. the reference image while ensuring high
+              fidelity by accurately preserving scene attributes, such as object interactions and spatial relationships
+              from the text guidance. Hummingbird employs a novel Multimodal Context Evaluator that simultaneously
+              optimizes our formulated Global Semantic and Fine-grained Consistency Rewards to ensure generated images
+              preserve the scene attributes of reference images in relation to the text guidance while maintaining
+              diversity. As the first model to address the task of maintaining both diversity and fidelity given a
+              multimodal context, we introduce a new benchmark formulation incorporating MME Perception and Bongard HOI
+              datasets. Benchmark experiments show that Hummingbird outperforms all existing methods by achieving
+              superior fidelity while maintaining diversity, validating Hummingbird's potential as a robust multimodal
+              context-aligned image generator in complex visual tasks.
             </p>
           </div>
         </div>
