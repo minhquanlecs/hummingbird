@@ -18,7 +18,8 @@ body {
 }
 
 .title-icon {
-  height: 0.9em;
+  height: 1.2em;
+  vertical-align: middle;
   /* Fixed height in pixels */
 }
 
@@ -50,7 +51,7 @@ body {
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
-  font-size: 2.8em !important;
+  font-size: 2.7em !important;
 }
 
 .publication-authors {
