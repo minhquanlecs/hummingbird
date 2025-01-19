@@ -150,12 +150,18 @@
           <img src="static/images/teaser_comparison_v1.pdf" class="center-image" />
         </center>
         <h2 class="subtitle has-text-centered">
-          Hummingbird aligns generated image with multimodal context input (reference image + text guidance) ensuring
-          the synthetic image is diverse w.r.t. reference image while exhibiting high fidelity (i.e. preserves the scene
-          attribute from reference image in relation to text guidance). (a-f) By doing so, for VQA and HOI Reasoning,
-          Hummingbird enables the answer to the question in the text guidance to remain consistent between the reference
-          and generated images. (g) Hummingbird is also able to preserve both diversity and fidelity without the
-          trade-off exhibited by existing methods.
+          <div class="content has-text-justified">
+            <p>Hummingbird aligns generated image with multimodal context input (reference image + text guidance)
+              ensuring
+              the synthetic image is diverse w.r.t. reference image while exhibiting high fidelity (i.e. preserves the
+              scene
+              attribute from reference image in relation to text guidance). (a-f) By doing so, for VQA and HOI
+              Reasoning,
+              Hummingbird enables the answer to the question in the text guidance to remain consistent between the
+              reference
+              and generated images. (g) Hummingbird is also able to preserve both diversity and fidelity without the
+              trade-off exhibited by existing methods.</p>
+          </div>
         </h2>
       </div>
     </div>
@@ -234,7 +240,7 @@
                 \mathcal{M} \)
                 while preserving diversity, Hummingbird introduced a Multimodal Context Evaluator to simultaneously
                 maximize
-                novel rewards -- Global Semantic and Fine-Grained Consistency Rewards -- to align \( \mathbf{\hat{x}} \)
+                novel rewards - Global Semantic and Fine-Grained Consistency Rewards - to align \( \mathbf{\hat{x}} \)
                 with
                 scene attributes provided in \( \mathcal{M} \).
               </p>
@@ -245,6 +251,29 @@
     </div>
   </section>
 
+
+  <section class="section hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Fine-tuning with Multimodal Context Rewards</h2>
+            <center>
+              <img src="static/images/qformer-v5.pdf" alt="Fine-tuning with Multimodal Context Rewards"
+                class="center-image blend-img-background" />
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                Hummingbird's Multimodal Context Evaluator leverages pre-trained BLIP-2 QFormer. It simultaneously
+                maximizes our novel Global Semantic and Fine-grained Consistency Rewards to align generated image \(
+                \mathbf{\hat{x}} \) with Content Description \( \mathcal{C} \) corresponding to multimodal context \(
+                \mathcal{M} \).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Image carousel -->
   <section class="hero is-small">
@@ -346,7 +375,7 @@
 
 
   <!-- Paper poster -->
-  <section class="hero is-small is-light">
+  <!-- <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
         <h2 class="title">Poster</h2>
@@ -356,7 +385,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
   <!--End paper poster -->
 
 
